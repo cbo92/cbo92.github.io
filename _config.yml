@@ -6,7 +6,7 @@ author:
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >
-  La loi de Wirth est une loi empirique formulée par Niklaus Wirth en 1995, selon laquelle "Les programmes ralentissent plus vite que le matériel n'accélère".
+  La loi de Wirth : "Les programmes ralentissent plus vite que le matériel n'accélère", Niklaus Wirth, 1995.
 
 # Build settings
 
@@ -47,7 +47,7 @@ minima:
   # Minima date format.
   # The default value is "%b %d, %Y" (e.g. Nov 14, 2023) 
   # Refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this.
-  date_format: "%Y-%m-%d %H:%M"
+  date_format: "%Y-%B-%d"
 
   # Generate social links in footer.
   #social_links:
@@ -68,5 +68,7 @@ minima:
   #  - { platform: twitter,        user_url: "https://twitter.com/jekyllrb" }
   #  - { platform: x,              user_url: "https://x.com/jekyllrb" }
   #  - { platform: youtube,        user_url: "https://www.youtube.com/jekyll" }
+  - { platform: mastodon,        user_url: "https://mastodon.social/@cbo9" }
+  
 
 
