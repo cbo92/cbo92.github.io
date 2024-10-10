@@ -1,8 +1,8 @@
 <div class="article-content">
     <h2>Commentaires</h2>
-    <p><a class="link" href="https://{{ page.comments.host }}/@{{ page.comments.username }}/{{ page.comments.id }}">Commenter cet article en utilisant Mastodon</a>.</p>
+    <p>Vous pouvez utiliser votre compte Mastodon ou ActivityPub pour commenter cet article en répondant à ce <a class="link" href="https://{{ page.comments.host }}/@{{ page.comments.username }}/{{ page.comments.id }}">post (pouet)</a>.</p>
     <p><a class="button" href="https://{{ page.comments.host }}/interact/{{ page.comments.id }}?type=reply"><button id="reply">Répondre</button></a></p>
-    <p id="mastodon-comments-list"><button id="load-comment">Charger les commentaires</button></p>
+    <p id="mastodon-comments-list"><button id="load-comment">Charger les commentaires depuis Mastodon</button></p>
     <noscript><p>You need JavaScript to view the comments.</p></noscript>
     <script src="/assets/js/purify.min.js"></script>
     <script type="text/javascript">
@@ -53,7 +53,7 @@
                   document.getElementById('mastodon-comments-list').appendChild(DOMPurify.sanitize(mastodonComment, {'RETURN_DOM_FRAGMENT': true}));
                 });
             } else {
-              document.getElementById('mastodon-comments-list').innerHTML = "<p>Aucun commentaire</p>";
+              document.getElementById('mastodon-comments-list').innerHTML = "<p>Aucun commentaire, soyez le premier !</p>";
             }
           });
         });
